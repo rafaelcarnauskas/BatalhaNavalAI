@@ -1,2 +1,2 @@
 # BatalhaNavalAI
-IA que joga batalha naval
+Projeto de férias: IA que joga batalha naval
