@@ -25,7 +25,7 @@ public class Tabuleiro {
         return null;
     }
 
-    public int jogada(Posicao missil) { /////////ta errado ainda
+    public int jogada(Posicao missil) {
         if (tabuleiro[missil.x][missil.y] == 1) {
             Navio n = navioAcertado(missil);
             n.removeParte(missil, this);

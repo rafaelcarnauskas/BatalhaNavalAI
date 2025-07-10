@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Navio {
     int tamanho;
     Posicao[] pontos; // vai armazenar todas as posições do navio
@@ -18,5 +20,16 @@ public class Navio {
 
     public int estadoDoNavio() {
         return vida;
+    }
+
+    public Tabuleiro escolhePosicao(Tabuleiro maze) {
+        Posicao p = new Posicao();
+        p = p.posicaoAleatoria();
+
+        while (maze.tabuleiro[p.x][p.y] != 0) {
+            p = p.posicaoAleatoria();
+        }
+
+        return maze;
     }
 }
